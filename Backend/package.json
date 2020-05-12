@@ -1,0 +1,24 @@
+{
+  "name": "mern_shoping_list",
+  "version": "1.0.0",
+  "description": "shoping list with MERN stack",
+  "main": "server.js",
+  "scripts": {
+    "frontend-install": "npm install --prefix fronend",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "frontend": " cd ../frontend && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run frontend\""
+  },
+  "author": "Roberto Candales",
+  "license": "MIT",
+  "dependencies": {
+    "D": "^1.0.0",
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.10",
+    "nodemon": "^2.0.3"
+  }
+}
